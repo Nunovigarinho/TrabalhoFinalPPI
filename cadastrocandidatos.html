@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro de Candidatos</title>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+    <div class="form-container">
+        <form action="/candidatos" method="POST">
+            <h2>Cadastro de Candidatos</h2>
+            
+            <label for="nome">Nome Completo:</label>
+            <input type="text" id="nome" name="nome" required>
+            
+            <label for="partido">Partido:</label>
+            <input type="text" id="partido" name="partido" required>
+            
+            <label for="cargo">Número do Candidato:</label>
+            <input type="text" id="cargo" name="cargo" required>
+            
+            <button type="submit">Cadastrar Candidato</button>
+        </form>
+    </div>
+</body>
+</html>
