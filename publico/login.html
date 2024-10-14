@@ -4,23 +4,21 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login de Usuário</title>
-    <link rel="stylesheet" href="estilo.css">
+    <link rel="stylesheet" href="./css/estilo.css">
 </head>
 <body>
     <div class="form-container">
         <form action="/login" method="POST">
             <h2>Login</h2>
             <label for="username">Usuário:</label>
-            <input type="text" id="username" name="username" required>
+            <input type="text" id="usuario" name="usuario" required>
             
             <label for="password">Senha:</label>
-            <input type="password" id="password" name="password" required>
+            <input type="password" id="senha" name="senha" required>
             
             <button type="submit">Login</button>
         </form>
-        <form action="/logout" method="POST" style="margin-top: 20px;">
-            <button type="submit">Logout</button>
-        </form>
+       
     </div>
 </body>
 </html>

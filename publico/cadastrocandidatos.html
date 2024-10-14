@@ -4,11 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cadastro de Candidatos</title>
-    <link rel="stylesheet" href="estilo.css">
+    <link rel="stylesheet" href="./css/estilo.css">
 </head>
 <body>
     <div class="form-container">
-        <form action="/candidatos" method="POST">
+        <form id="formCandidatos" method="POST" action="#">
             <h2>Cadastro de Candidatos</h2>
             
             <label for="nome">Nome Completo:</label>
@@ -17,11 +17,14 @@
             <label for="partido">Partido:</label>
             <input type="text" id="partido" name="partido" required>
             
-            <label for="cargo">Número do Candidato:</label>
-            <input type="text" id="cargo" name="cargo" required>
+            <label for="numerodocandidato">Número do Candidato:</label>
+            <input type="text" id="numerodocandidato" name="numerodocandidato" required>
             
-            <button type="submit">Cadastrar Candidato</button>
+            <button id="botaodeConfirmacao" type="submit">Cadastrar Candidato</button>
         </form>
+        <div id="mensagem1"></div>
     </div>
+    <div class="container" id="containerTabela1"></div>
 </body>
+<script src="./candidato.js"></script>
 </html>
